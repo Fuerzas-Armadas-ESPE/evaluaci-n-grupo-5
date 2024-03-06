@@ -71,7 +71,7 @@ export function TaskFormPage() {
   return (
     <Card>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <Label htmlFor="title">Title</Label>
+        <Label htmlFor="title">Título de Curso</Label>
         <Input
           type="text"
           name="title"
@@ -80,32 +80,32 @@ export function TaskFormPage() {
           autoFocus
         />
         {errors.title && (
-          <p className="text-red-500 text-xs italic">Please enter a title.</p>
+          <p className="text-red-500 text-xs italic">Ingresa el título del Curso.</p>
         )}
 
-        <Label htmlFor="description">Description</Label>
+        <Label htmlFor="description">Descripción</Label>
         <Textarea
           name="description"
           id="description"
           rows="3"
-          placeholder="Description"
+          placeholder="Información del Curso"
           {...register("description")}
         ></Textarea>
 
-        <Label htmlFor="date">Date</Label>
+        <Label htmlFor="date">La fecha de publicación</Label>
         <Input type="date" name="date" {...register("date")} />
 
-        <Label htmlFor="topics">Topics</Label>
+        <Label htmlFor="topics">Ingrese los temas que se tratarán</Label>
         <Input
           type="text"
           name="topics"
-          placeholder="Topics (separated by commas)"
+          placeholder="Los temas deben estar separados por comas"
           {...register("topics")}
         />
         {/* Mostrar mensaje de error si existe */}
         {error && <p className="text-red-500 text-xs italic">{error}</p>}
-
-        <Button type="submit">Save</Button> {/* Agregar type="submit" al botón */}
+        <center>
+        <Button type="submit">Guardar</Button> {/* Agregar type="submit" al botón */}</center>
       </form>
     </Card>
   );
