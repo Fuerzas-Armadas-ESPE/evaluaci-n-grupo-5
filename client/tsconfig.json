@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "es5",                    /* Especifica la versión de ECMAScript de destino. */
+      "module": "commonjs",               /* Especifica el sistema de módulos. */
+      "strict": true,                     /* Habilita todas las opciones de comprobación estricta. */
+      "esModuleInterop": true,            /* Habilita la interoperabilidad de módulos de estilo ECMAScript. */
+      "jsx": "react",                     /* Especifica cómo se desean emitir los archivos JSX. */
+      "outDir": "./dist",                 /* Directorio de salida para la generación de archivos .js */
+      "baseUrl": "./src",                 /* Ruta de acceso base que se utiliza para resolver los módulos. */
+      "paths": {
+        "*": ["node_modules/*", "src/types/*"]
+      },
+      "resolveJsonModule": true           /* Permite la importación de módulos JSON. */
+    },
+    "include": [
+      "src/**/*.ts",                      /* Patrones de inclusión de archivos. */
+      "src/**/*.tsx"
+    ],
+    "exclude": [
+      "node_modules"                     /* Patrones de exclusión de archivos. */
+    ]
+  }
+  
