@@ -124,7 +124,7 @@ npm run dev
 
 ## Visualización de la Página
 1. Ingreso a la Página
-   ![Principal](Evidencias/PantallaPrincipal)
+   ![Principal](Evidencias/PantallaPrincipal.png)
 
 ## Elaborado por:
 Ricardo Rivadeneira, Jose Imbaquinga
