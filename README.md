@@ -139,6 +139,18 @@ npm run dev
 
 5. Al ingresar a un curso puede agregar los temas o marcar la actividad como hecha
    ![Dentro](Evidencias/DentrodelCurso.jpg)
+
+6. Petición Post para el Registro
+   ![regipost](Evidencias/PeticionPostRegistro.png)
+
+7. Petición Post para el Login
+   ![logpost](Evidencias/PeticionPostLogin.png)
+
+8. Evidencia de que se guardo correctamente en la Base de Datos el usuario
+   ![usuario](Evidencias/UsuariosBDD.png)
+
+9. Evidencia de que se guardo correctamente en la Base de Datos el curso ingresado
+   ![logpost](Evidencias/CursoBDD.png)
    
 ## Elaborado por:
 Ricardo Rivadeneira, Jose Imbaquinga
