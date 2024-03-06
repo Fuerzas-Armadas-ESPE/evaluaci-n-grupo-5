@@ -47,6 +47,7 @@ Para probar el backend, usamos la herramienta de Thunder Client, este facilitó 
 
 
 ## Estructura del Proyecto
+```
 V EXAMEN3P_WEB-MAIN
 ├── client
 │ ├── public
@@ -78,7 +79,7 @@ V EXAMEN3P_WEB-MAIN
 │ ├── routes.jsx
 │ └── setupTests.js
 └── .gitignore
-
+```
 
 ### Descripción de los Componentes Principales
 
