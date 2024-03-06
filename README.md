@@ -138,7 +138,7 @@ npm run dev
    ![PantallaCursos](Evidencias/NuevoCursoAgregado.jpg)
 
 5. Al ingresar a un curso puede agregar los temas o marcar la actividad como hecha
-   ![Dentro](Evidencias/DentroDelCurso.jpg)
+   ![Dentro](Evidencias/DentrodelCurso.jpg)
    
 ## Elaborado por:
 Ricardo Rivadeneira, Jose Imbaquinga
