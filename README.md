@@ -45,6 +45,63 @@ Establecemos una relación donde un curso puede tener múltiples temas asociados
 
 Para probar el backend, usamos la herramienta de Thunder Client, este facilitó realizar solicitudes HTTP para visualizar los datos y probar el sistema en tiempo real, tales como GET,POST,PUT y DELETE.
 
+
+## Estructura del Proyecto
+V EXAMEN3P_WEB-MAIN
+├── client
+│ ├── public
+│ └── src
+│ ├── api
+│ ├── assets
+│ ├── components
+│ │ ├── tasks
+│ │ │ ├── TaskCardWithTopics.jsx
+│ │ │ └── TaskCardWithoutTopics.jsx
+│ │ └── ui
+│ │ └── Navbar.jsx
+│ ├── context
+│ ├── pages
+│ │ ├── CourseAccessPage.jsx
+│ │ ├── HomePage.jsx
+│ │ ├── LoginPage.jsx
+│ │ ├── RegisterPage.jsx
+│ │ ├── TaskFormPage.jsx
+│ │ └── TasksPage.jsx
+│ ├── schemas
+│ ├── App.css
+│ ├── App.jsx
+│ ├── App.test.js
+│ ├── config.js
+│ ├── index.css
+│ ├── main.jsx
+│ ├── reportWebVitals.js
+│ ├── routes.jsx
+│ └── setupTests.js
+└── .gitignore
+
+
+### Descripción de los Componentes Principales
+
+- `client/`: Contiene todos los archivos relacionados con la interfaz de usuario del proyecto.
+  - `public/`: Almacena archivos estáticos como el `index.html`.
+  - `src/`: Directorio principal que contiene el código fuente JavaScript y CSS.
+    - `api/`: Funciones para realizar peticiones a APIs externas.
+    - `assets/`: Imágenes, fuentes y otros recursos estáticos utilizados en la aplicación.
+    - `components/`: Componentes reutilizables de React.
+      - `tasks/`: Componentes específicos para la funcionalidad de tareas.
+      - `ui/`: Componentes de interfaz de usuario como la barra de navegación.
+    - `context/`: Contextos de React para el manejo global del estado.
+    - `pages/`: Componentes de React que actúan como páginas o vistas en la aplicación.
+    - `schemas/`: Esquemas para la validación de datos o estructuras de datos esperadas.
+    - `App.css`: Hoja de estilos global de la aplicación.
+    - `App.jsx`: Componente principal de la aplicación.
+    - `config.js`: Archivo de configuración global de la aplicación.
+    - `index.css`: Hoja de estilos base para el proyecto.
+    - `main.jsx`: Punto de entrada principal de la aplicación React.
+    - `routes.jsx`: Definiciones de rutas de la aplicación usando React Router.
+- `.gitignore`: Archivo para especificar intencionalmente archivos no rastreados para ignorar.
+
+
 ## Configuración y Ejecución
 
 ### Para ejecutar todo el proyecto 
@@ -63,7 +120,5 @@ cd client
 npm install
 npm run dev
 ```
-
-
 ## Elaborado por:
 Ricardo Rivadeneira, Jose Imbaquinga
