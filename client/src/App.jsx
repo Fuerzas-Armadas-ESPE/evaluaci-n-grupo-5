@@ -8,6 +8,8 @@ import RegisterPage from "./pages/RegisterPage";
 import { TaskFormPage } from "./pages/TaskFormPage";
 import { LoginPage } from "./pages/LoginPage";
 import { TasksPage } from "./pages/TasksPage";
+import CourseAccessPage from "./pages/CourseAccessPage";
+
 import { TaskProvider } from "./context/tasksContext";
 
 function App() {
@@ -26,6 +28,7 @@ function App() {
                 <Route path="/add-task" element={<TaskFormPage />} />
                 <Route path="/tasks/:id" element={<TaskFormPage />} />
                 <Route path="/profile" element={<h1>Profile</h1>} />
+                <Route path="/courses/:courseId" element={<CourseAccessPage  />} /> 
               </Route>
             </Routes>
           </main>
