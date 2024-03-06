@@ -31,8 +31,9 @@ export function LoginPage() {
         {loginErrors.map((error, i) => (
           <Message message={error} key={i} />
         ))}
-        <h1 className="text-2xl font-bold">Login</h1>
-
+        <center>
+        <h1 className="text-2xl font-bold">Inicio de Sesión</h1>
+        </center>
         <form onSubmit={handleSubmit(onSubmit)}>
           <Label htmlFor="email">Email:</Label>
           <Input
@@ -44,7 +45,7 @@ export function LoginPage() {
           />
           <p>{errors.email?.message}</p>
 
-          <Label htmlFor="password">Password:</Label>
+          <Label htmlFor="password">Constraseña:</Label>
           <Input
             type="password"
             name="password"
@@ -52,12 +53,12 @@ export function LoginPage() {
             {...register("password", { required: true, minLength: 6 })}
           />
           <p>{errors.password?.message}</p>
-
-          <Button>Login</Button>
+          <center>
+          <Button>Ingresar</Button></center>
         </form>
 
         <p className="flex gap-x-2 justify-between">
-          Don't have an account? <Link to="/register" className="text-sky-500">Sign up</Link>
+          ¿Aún no tienes una cuenta? <Link to="/register" className="text-sky-500">Regístrate</Link>
         </p>
       </Card>
     </div>
