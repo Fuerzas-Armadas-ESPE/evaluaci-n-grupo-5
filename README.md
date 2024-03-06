@@ -1,48 +1,69 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/pAE8ly39)
-# Sistema de Gestión de Cursos para Docentes
+# Curso y Gestión de Temas #Course RJ"
 
-```mermaid
-graph TD;
-  A[Evaluación] --> B[Configuración del Proyecto]
-  B --> C[Desarrollo del Backend]
-  C --> D[Implementación de Seguridad]
-  D --> E[Pruebas Unitarias con Jest en Backend]
-  E --> F[Entregable]
-  C --> G[Gestión de Cursos]
-  C --> H[Gestión de Temas]
-  G --> I[Operaciones CRUD]
-  H --> I
-  I --> J[Controlador y Servicio]
-  H --> K[Relación entre Cursos y Temas]
-  C --> L[Integración con Backend]
-  L --> D
-  D --> M[Repositorio de GitHub]
-  D --> N[Documentación detallada]
-  D --> O[Capturas de pantalla o vdeos demostrativos]
-  N --> P[Configuración y ejecución del proyecto]
-```
-## Evaluación
-
-Se evalúa la necesidad de desarrollar un sistema de gestión de cursos para docentes.
+Este proyecto ofrece una solución completa para la gestión de cursos y temas, permitiendo a los usuarios crear, leer, actualizar y eliminar cursos y sus respectivos temas. El backend está desarrollado con Express, mientras que para el frontend se utiliza Vite junto con React.
 
 ## Configuración del Proyecto
 
-Se utiliza Nest.js para configurar el backend y se establece una base de datos MongoDB para almacenar la información de los cursos y los temas.
+### Backend
+
+- **Tecnología**: Utilizamos Express para el manejo del servidor y las rutas.
+- **Base de Datos**: MongoDB está configurado para almacenar la información de los cursos y temas.
+
+### Frontend (Opcional)
+
+- Desarrollado con React, utilizando Vite como herramienta de construcción.
 
 ## Desarrollo del Backend
 
-Se crea un módulo para la gestión de los cursos, con operaciones CRUD, así como un controlador y un servicio para la lógica de negocio relacionada. Se desarrolla también un módulo para la gestión de los temas de los cursos, estableciendo la relación entre cursos y temas.
+1. **Gestión de Cursos**: Implementamos un módulo CRUD para manejar los cursos.
+2. **Gestión de Temas**: Similarmente, un módulo CRUD para los temas de los cursos es desarrollado, permitiendo una gestión eficaz de estos.
+
+## Relación entre Cursos y Temas
+
+Establecemos una relación donde un curso puede tener múltiples temas asociados, lo que permite una organización y gestión detallada de los contenidos del curso.
+
+## Desarrollo del Frontend
+
+- **Tecnologías**: React es usado para el desarrollo del frontend, ofreciendo una experiencia de usuario interactiva y dinámica.
+- **Integración con Backend**: Mediante peticiones HTTP, el frontend interactúa con los endpoints RESTful del backend.
 
 ## Implementación de Seguridad
 
-Se implementan medidas de seguridad en el backend para proteger las rutas y acciones del sistema, utilizando técnicas como la autenticación basada en tokens JWT.
+- **Backend**: Implementamos seguridad en las rutas y acciones, utilizando JWT para la autenticación y control de acceso.
 
-## Pruebas Unitarias con Jest en Backend
+## Pruebas Unitarias
 
-Se escriben pruebas unitarias para verificar el correcto funcionamiento de los controladores y servicios del backend, utilizando Jest como framework de pruebas.
+- **Jest**: Utilizamos Jest para escribir pruebas unitarias, asegurando el correcto funcionamiento de nuestros controladores y servicios.
 
-## Entregable
+## Entregables
 
-Se entrega un repositorio de GitHub con el código fuente del proyecto, documentación detallada sobre la configuración y ejecución del proyecto, y capturas de pantalla o vídeos demostrativos que muestren el sistema en funcionamiento.
+- **Repositorio GitHub**: Encuentra el código fuente en nuestro repositorio de GitHub.
+- **Documentación**: Incluimos documentación detallada para la configuración y ejecución del proyecto.
+- **Demostración**: Proporcionamos capturas de pantalla o vídeos demostrativos del sistema en funcionamiento.
 
-Para visualizar y probar la generación del sistema backend, así como su consumo desde un Frontend, puedes utilizar herramientas como Thunder Client, Postman, Insomnia o RapidApiClient. Estas herramientas permiten realizar solicitudes HTTP a los endpoints del backend, lo que facilita la visualización de los datos y el funcionamiento del sistema en tiempo real.
+## Herramientas para Pruebas de API
+
+Para probar el backend, usamos la herramienta de Thunder Client, este facilitó realizar solicitudes HTTP para visualizar los datos y probar el sistema en tiempo real, tales como GET,POST,PUT y DELETE.
+
+## Configuración y Ejecución
+
+### Para ejecutar todo el proyecto 
+
+1. En la raíz del proyecto:
+
+```bash
+npm install
+docker compose up -d
+npm run dev
+```
+
+2. En la carpeta client
+```bash
+cd client
+npm install
+npm run dev
+```
+
+
+## Elaborado por:
+Ricardo Rivadeneira, Jose Imbaquinga

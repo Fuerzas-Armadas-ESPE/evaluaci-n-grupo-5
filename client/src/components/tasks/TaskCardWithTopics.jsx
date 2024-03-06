@@ -1,6 +1,7 @@
 import React from "react";
 import { useTasks } from "../../context/tasksContext";
-import { Button, ButtonLink, Card } from "../ui";
+import { Button, Card } from "../ui";
+import { Link } from "react-router-dom"; // Asumiendo que estás usando react-router para la navegación
 
 export function TaskCardWithTopics({ task }) {
   const { deleteTask } = useTasks();
@@ -14,7 +15,7 @@ export function TaskCardWithTopics({ task }) {
       <header className="flex justify-between">
       </header>
       <Card>
-      <h1 className="text-2xl font-bold">{task.title}</h1>
+        <h1 className="text-2xl font-bold">{task.title}</h1>
 
         <p className="text-slate-300">{task.description}</p>
         {/* format date */}
@@ -39,12 +40,11 @@ export function TaskCardWithTopics({ task }) {
               </span>
             ))
           }
-           
         </div>
         <div>
-        <Button onClick={handleDelete}>Delete</Button>
-        
-        <ButtonLink to={`/tasks/${task._id}`}>Edit</ButtonLink>
+          <Button onClick={handleDelete}>Eliminar</Button>
+          {/* Cambio el ButtonLink por Link de react-router-dom con un estilo de botón */}
+          <Link to={`/courses/${task._id}`} className="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Acceder al curso</Link>
         </div>
       </Card>
       
