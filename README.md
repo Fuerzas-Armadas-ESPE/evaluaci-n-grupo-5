@@ -128,17 +128,17 @@ npm run dev
    ![Principal](Evidencias/PantallaPrincipal.png)
 
 2. Si no tiene una Cuenta, puede Registrarse
-   ![Registro](Evidencias/PaginaaRegistro.png)
+   ![Registro](Evidencias/PaginaRegistro.png)
 
 3. Una vez creada una Cuenta, puede Ingresar Sesión
    
    ![Login](Evidencias/PaginaLogin.png)
 
 4. Dentro de la Cuenta, podrá visualizar los cursos o crear uno nuevo
-   ![PantallaCursos](Evidencias/NuevoCursoAgregado.png)
+   ![PantallaCursos](Evidencias/NuevoCursoAgregado.jpg)
 
 5. Al ingresar a un curso puede agregar los temas o marcar la actividad como hecha
-   ![Dentro](Evidencias/DentroDelCurso.png)
+   ![Dentro](Evidencias/DentroDelCurso.jpg)
    
 ## Elaborado por:
 Ricardo Rivadeneira, Jose Imbaquinga
