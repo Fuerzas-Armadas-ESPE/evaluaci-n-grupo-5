@@ -124,7 +124,21 @@ npm run dev
 
 ## Visualización de la Página
 1. Ingreso a la Página
+   
    ![Principal](Evidencias/PantallaPrincipal.png)
 
+2. Si no tiene una Cuenta, puede Registrarse
+   ![Registro](Evidencias/PaginaaRegistro.png)
+
+3. Una vez creada una Cuenta, puede Ingresar Sesión
+   
+   ![Login](Evidencias/PaginaLogin.png)
+
+4. Dentro de la Cuenta, podrá visualizar los cursos o crear uno nuevo
+   ![PantallaCursos](Evidencias/NuevoCursoAgregado.png)
+
+5. Al ingresar a un curso puede agregar los temas o marcar la actividad como hecha
+   ![Dentro](Evidencias/DentroDelCurso.png)
+   
 ## Elaborado por:
 Ricardo Rivadeneira, Jose Imbaquinga
